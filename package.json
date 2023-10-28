@@ -1,0 +1,17 @@
+{
+  "name": "@reactresume/types",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --rootDir src/ --outDir dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.2.28",
+    "typescript": "^5.2.2"
+  }
+}
