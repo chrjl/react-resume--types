@@ -7,3 +7,8 @@ export interface ResumeEntry {
   description?: React.ReactNode;
   highlights?: React.ReactNode;
 }
+
+export interface ResumeObject {
+  skills?: ResumeEntry[] | null;
+  languages?: ResumeEntry[] | null;
+}
