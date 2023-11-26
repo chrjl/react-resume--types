@@ -6,7 +6,7 @@ export default interface ResumeObject {
 export interface ResumeEntry {
   title: React.ReactNode;
   subtitle?: React.ReactNode;
-  keywords?: React.ReactNode;
+  note?: React.ReactNode;
   description?: React.ReactNode;
   highlights?: React.ReactNode;
 }
