@@ -6,6 +6,7 @@ export default interface JSONResumeObject {
 export namespace JSONResume {
   export interface Skill {
     name: string;
+    level?: string;
     keywords?: string[];
   }
 
