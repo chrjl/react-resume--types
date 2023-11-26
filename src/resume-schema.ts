@@ -3,6 +3,7 @@ export default interface ResumeObject {
   languages?: ResumeEntry[] | null;
   education?: ResumeEntry[] | null;
   certificates?: ResumeEntry[] | null;
+  projects?: ResumeEntry[] | null;
 }
 
 export interface ResumeEntry {

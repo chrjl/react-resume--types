@@ -3,6 +3,7 @@ export default interface JSONResumeObject {
   languages?: JSONResume.Language[];
   education?: JSONResume.Education[];
   certificates?: JSONResume.Certificate[];
+  projects?: JSONResume.Project[];
 }
 
 export namespace JSONResume {
@@ -33,5 +34,15 @@ export namespace JSONResume {
     date?: string;
     issuer?: string;
     url?: string;
+  }
+
+  export interface Project {
+    name: string;
+    startDate?: string;
+    endDate?: string;
+    description?: string;
+    highlights?: string[];
+    url?: string | string[];
+    keywords?: string[];
   }
 }
