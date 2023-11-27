@@ -4,6 +4,8 @@ export default interface ResumeObject {
   education?: ResumeEntry[] | null;
   certificates?: ResumeEntry[] | null;
   projects?: ResumeEntry[] | null;
+  work?: ResumeEntry[] | null;
+  experience?: ResumeEntry[] | null;
 }
 
 export interface ResumeEntry {

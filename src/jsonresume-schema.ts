@@ -4,6 +4,8 @@ export default interface JSONResumeObject {
   education?: JSONResume.Education[];
   certificates?: JSONResume.Certificate[];
   projects?: JSONResume.Project[];
+  work?: JSONResume.Work[];
+  experience?: JSONResume.Work[];
 }
 
 export namespace JSONResume {
@@ -44,5 +46,17 @@ export namespace JSONResume {
     highlights?: string[];
     url?: string | string[];
     keywords?: string[];
+  }
+
+  export interface Work {
+    name: string;
+    department?: string;
+    location?: string;
+    position?: string;
+    url?: string;
+    startDate?: string;
+    endDate?: string;
+    summary?: string;
+    highlights?: string[];
   }
 }
