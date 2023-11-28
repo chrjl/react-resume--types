@@ -1,11 +1,11 @@
 export default interface ResumeObject {
-  skills?: ResumeEntry[] | null;
-  languages?: ResumeEntry[] | null;
-  education?: ResumeEntry[] | null;
-  certificates?: ResumeEntry[] | null;
-  projects?: ResumeEntry[] | null;
-  work?: ResumeEntry[] | null;
-  experience?: ResumeEntry[] | null;
+  skills?: ResumeEntry[];
+  languages?: ResumeEntry[];
+  education?: ResumeEntry[];
+  certificates?: ResumeEntry[];
+  projects?: ResumeEntry[];
+  work?: ResumeEntry[];
+  experience?: ResumeEntry[];
 }
 
 export interface ResumeEntry {
