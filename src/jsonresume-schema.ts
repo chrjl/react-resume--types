@@ -8,19 +8,23 @@ export default interface JSONResumeObject {
   experience?: JSONResume.Work[];
 }
 
+export interface JSONResumeMeta {
+  _display: boolean;
+}
+
 export namespace JSONResume {
-  export interface Skill {
+  export interface Skill extends JSONResumeMeta {
     name: string;
     level?: string;
     keywords?: string[];
   }
 
-  export interface Language {
+  export interface Language extends JSONResumeMeta {
     language: string;
     fluency?: string;
   }
 
-  export interface Education {
+  export interface Education extends JSONResumeMeta {
     institution: string;
     url?: string;
     area?: string;
@@ -31,14 +35,14 @@ export namespace JSONResume {
     courses?: string[];
   }
 
-  export interface Certificate {
+  export interface Certificate extends JSONResumeMeta {
     name: string;
     date?: string;
     issuer?: string;
     url?: string;
   }
 
-  export interface Project {
+  export interface Project extends JSONResumeMeta {
     name: string;
     startDate?: string;
     endDate?: string;
@@ -48,7 +52,7 @@ export namespace JSONResume {
     keywords?: string[];
   }
 
-  export interface Work {
+  export interface Work extends JSONResumeMeta {
     name: string;
     department?: string;
     location?: string;
