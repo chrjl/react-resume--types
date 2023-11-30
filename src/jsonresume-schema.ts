@@ -1,4 +1,5 @@
 export default interface JSONResumeObject {
+  basics?: JSONResumeBasics;
   skills?: JSONResumeEntry.Skill[];
   languages?: JSONResumeEntry.Language[];
   education?: JSONResumeEntry.Education[];
@@ -6,6 +7,28 @@ export default interface JSONResumeObject {
   projects?: JSONResumeEntry.Project[];
   work?: JSONResumeEntry.Work[];
   experience?: JSONResumeEntry.Work[];
+}
+
+export interface JSONResumeBasics {
+  name: string;
+  label?: string;
+  email: string;
+  phone: string;
+  url?: string;
+  summary?: string;
+  location: {
+    address?: string;
+    postalCode?: string;
+    city: string;
+    countryCode: string;
+    region: string;
+  };
+  profiles?: {
+    _display?: boolean;
+    network: string;
+    username?: string;
+    url: string;
+  }[];
 }
 
 export interface JSONResumeMeta {

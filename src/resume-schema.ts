@@ -1,4 +1,5 @@
 export default interface ResumeObject {
+  basics?: ResumeEntry;
   skills?: ResumeEntry[];
   languages?: ResumeEntry[];
   education?: ResumeEntry[];
