@@ -36,6 +36,8 @@ export interface JSONResumeMeta {
 }
 
 export namespace JSONResumeEntry {
+  export interface Basics extends JSONResumeBasics {}
+
   export interface Skill extends JSONResumeMeta {
     name: string;
     level?: string;

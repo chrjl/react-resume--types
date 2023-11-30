@@ -1,3 +1,5 @@
+import JSONResumeBasics from './jsonresume-schema';
+
 export default interface ResumeObject {
   basics?: ResumeEntry;
   skills?: ResumeEntry[];
