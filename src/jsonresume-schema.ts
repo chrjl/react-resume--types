@@ -1,18 +1,18 @@
 export default interface JSONResumeObject {
-  skills?: JSONResume.Skill[];
-  languages?: JSONResume.Language[];
-  education?: JSONResume.Education[];
-  certificates?: JSONResume.Certificate[];
-  projects?: JSONResume.Project[];
-  work?: JSONResume.Work[];
-  experience?: JSONResume.Work[];
+  skills?: JSONResumeEntry.Skill[];
+  languages?: JSONResumeEntry.Language[];
+  education?: JSONResumeEntry.Education[];
+  certificates?: JSONResumeEntry.Certificate[];
+  projects?: JSONResumeEntry.Project[];
+  work?: JSONResumeEntry.Work[];
+  experience?: JSONResumeEntry.Work[];
 }
 
 export interface JSONResumeMeta {
-  _display: boolean;
+  _display?: boolean;
 }
 
-export namespace JSONResume {
+export namespace JSONResumeEntry {
   export interface Skill extends JSONResumeMeta {
     name: string;
     level?: string;

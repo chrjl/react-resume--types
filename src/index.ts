@@ -1,7 +1,7 @@
 import React from 'react';
 
-import JSONResumeObject, { JSONResume } from './jsonresume-schema';
+import JSONResumeObject, { JSONResumeEntry } from './jsonresume-schema';
 import ResumeObject, { ResumeEntry } from './resume-schema';
 
-export { ResumeEntry, ResumeObject, JSONResume, JSONResumeObject };
+export { ResumeEntry, ResumeObject, JSONResumeEntry, JSONResumeObject };
 
